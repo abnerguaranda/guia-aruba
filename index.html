@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía para viajar a Aruba · @abnerguaranda</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAF9F6;--card:#fff;--ink:#16181D;--mute:#6B6F76;--line:#ECEAE4;--butter:#F3DE95;--butterS:#FBF3D5;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.ic{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+section{padding:56px 0 0}
+.eb{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:600;margin-bottom:6px}
+h2{font-size:clamp(24px,3.4vw,34px);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:18px;position:relative}
+.sh p{color:var(--mute);font-size:14.5px;max-width:420px}
+.hl{background:linear-gradient(transparent 60%,var(--butter) 60%);padding:0 2px}
+.stk{position:absolute;pointer-events:none;height:auto}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;border:0;cursor:pointer;font:700 14.5px Inter,sans-serif;padding:0 20px;border-radius:999px;text-decoration:none;transition:transform .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid #3B82F6;outline-offset:2px}
+.b-ink{background:var(--ink);color:#fff}
+.b-white{background:#fff;color:var(--ink)}
+.b-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.9)}
+.b-butter{background:var(--butter);color:var(--ink)}
+.sm{min-height:38px;padding:0 14px;font-size:13px}
+.lnk{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:600;padding:7px 11px;border-radius:999px;text-decoration:none;border:1px solid var(--line);background:#fff;min-height:36px}
+.lnk:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.lnk .ic{width:14px;height:14px}
+.lk{display:flex;gap:6px;flex-wrap:wrap}
+/* nav */
+.top{position:sticky;top:0;z-index:40;background:rgba(250,249,246,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:16px;height:62px}
+.me{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:14.5px}
+.me img{width:36px;height:36px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--butter)}
+.links{display:flex;gap:20px;font-size:14px;font-weight:500;margin-left:14px}
+.links a{text-decoration:none;color:var(--mute)}.links a:hover{color:var(--ink)}
+.sp{flex:1}
+/* hero */
+.hero{position:relative;border-radius:26px;overflow:hidden;height:min(660px,82vh);min-height:520px;color:#fff;margin-top:18px;background:#7fb9c9}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,0) 30%,rgba(0,0,0,0) 55%,rgba(0,0,0,.6));pointer-events:none}
+.hin{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:space-between;padding:30px 34px}
+.pre{font-size:14px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-align:center}
+.word{font-weight:900;font-size:clamp(84px,18vw,220px);letter-spacing:-.06em;line-height:.85;text-align:center;margin-top:6px}
+.hb{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.author{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.95);color:var(--ink);border-radius:999px;padding:6px 16px 6px 6px;text-decoration:none}
+.author img{width:46px;height:46px;border-radius:50%;object-fit:cover}
+.author small{display:block;font-size:11.5px;color:var(--mute)}
+.author b{font-size:14.5px}
+.hr{text-align:right;max-width:380px}
+.hr h1{font-size:clamp(30px,3.6vw,46px);font-weight:700;letter-spacing:-.035em;line-height:1}
+.hr .row{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;margin-top:16px}
+.prog{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;margin-top:14px;justify-content:flex-end}
+.prog i{display:block;width:120px;height:3px;background:rgba(255,255,255,.35);border-radius:3px}
+.prog i b{display:block;height:100%;background:#fff;border-radius:3px;transition:width .4s}
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--line);border-radius:var(--r);margin-top:14px}
+.fact{display:flex;gap:12px;align-items:center;padding:16px 18px}
+.fact+.fact{border-left:1px solid var(--line)}
+.fact .ib{width:38px;height:38px;border-radius:50%;background:var(--butterS);display:grid;place-items:center;flex:none}
+.fact small{display:block;color:var(--mute);font-size:12px}
+.fact b{font-size:14.5px}
+/* compact rows card */
+.box{background:#fff;border:1px solid var(--line);border-radius:var(--r)}
+.rowi{display:grid;grid-template-columns:42px 1fr auto;gap:14px;align-items:center;padding:14px 18px}
+.rowi+.rowi{border-top:1px solid var(--line)}
+.rowi .ib{width:42px;height:42px;border-radius:12px;background:var(--butterS);display:grid;place-items:center}
+.rowi h3{font-size:15.5px;font-weight:700}
+.rowi p{font-size:13.5px;color:var(--mute)}
+.rowi .v{font-weight:800;font-size:15px;white-space:nowrap}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+/* stay */
+.stay{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:14px}
+.sc{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.sc .ph{aspect-ratio:16/9;overflow:hidden}.sc .ph img{width:100%;height:100%;object-fit:cover}
+.sc .bd{padding:14px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.sc h3{font-size:16px;font-weight:700}
+.sc p{font-size:13.5px;color:var(--mute);flex:1}
+.car{background:var(--ink);color:#fff;border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:12px}
+.car .ib{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.1);display:grid;place-items:center}
+.car ul{list-style:none;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:#C9CCD2}
+.car li{display:flex;gap:8px}.car li .ic{color:var(--butter);width:15px;height:15px;margin-top:2px}
+/* itinerary */
+.day{background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px 0 20px 20px;margin-bottom:14px}
+.dh{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-right:20px;margin-bottom:14px;flex-wrap:wrap}
+.dn{display:flex;align-items:center;gap:12px}
+.dn .n{width:44px;height:44px;border-radius:50%;background:var(--butter);display:grid;place-items:center;font-weight:800;font-size:17px;flex:none}
+.dn small{display:block;color:var(--mute);font-size:12px;font-weight:600}
+.dn h3{font-size:18px;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 20px 6px 2px;scrollbar-width:thin}
+.st{flex:0 0 190px;scroll-snap-align:start;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.st .ph{aspect-ratio:3/4;background:var(--butterS);display:grid;place-items:center;overflow:hidden}
+.st .ph img{width:100%;height:100%;object-fit:cover}
+.st .ph .ic{width:34px;height:34px;color:#B89B3A;stroke-width:1.6}
+.st .bd{padding:11px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.st .w{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.st h4{font-size:14.5px;font-weight:700;line-height:1.25}
+.st p{font-size:12.5px;color:var(--mute);flex:1;margin-bottom:6px}
+.note{margin:12px 20px 0 0;font-size:13px;color:var(--mute);display:flex;gap:8px;align-items:flex-start}
+.note .ic{margin-top:1px;color:#B89B3A}
+/* beaches rail */
+.brail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.bc{flex:0 0 200px;scroll-snap-align:start;text-decoration:none}
+.bc .ph{aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:var(--butterS)}
+.bc .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.bc:hover img{transform:scale(1.04)}
+.bc h4{font-size:15px;font-weight:700;margin-top:10px;display:flex;justify-content:space-between;align-items:center}
+.bc h4 .ic{color:var(--mute)}
+.bc p{font-size:12.5px;color:var(--mute)}
+/* lists */
+.list .li{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:13px 16px}
+.list .li+.li{border-top:1px solid var(--line)}
+.li h4{font-size:15px;font-weight:700;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.li p{font-size:13px;color:var(--mute)}
+.tg{font-size:11px;font-weight:600;padding:3px 8px;border-radius:999px;background:var(--butterS);color:#7A6418}
+.tg.k{background:#F1F1EF;color:var(--mute)}
+.ibtn{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;text-decoration:none;background:#fff}
+.ibtn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.acts{display:flex;gap:6px}
+.lh{padding:14px 16px 4px;font-size:13px;font-weight:700;display:flex;gap:8px;align-items:center}
+/* flamingo */
+.flam{display:grid;grid-template-columns:1.4fr 1fr;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;position:relative}
+.flam .l{padding:24px}
+.flam .l p{color:var(--mute);font-size:14px;margin:8px 0 14px}
+.flam .r{background:var(--butterS);padding:24px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.flam .pr{font-size:40px;font-weight:900;letter-spacing:-.04em;line-height:1}
+.flam .r small{color:var(--mute);font-size:13px}
+.pts{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.pts span{font-size:12.5px;padding:5px 10px;border-radius:999px;background:#F4F3EF}
+/* budget */
+.bud{display:grid;grid-template-columns:.9fr 1.1fr;gap:14px}
+.tot{background:var(--ink);color:#fff;border-radius:var(--r);padding:24px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.tot .big{font-size:56px;font-weight:900;letter-spacing:-.05em;line-height:1}
+.tot .g{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.15);padding-top:12px;font-size:14px;color:#C9CCD2}
+.tot .g b{color:#fff;font-size:18px}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mini div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+.mini small{display:block;font-size:12px;color:var(--mute)}
+.mini b{font-size:16px}
+details{margin-top:10px;background:#fff;border:1px solid var(--line);border-radius:14px}
+summary{cursor:pointer;padding:12px 16px;font-weight:600;font-size:14px;list-style:none;display:flex;justify-content:space-between;align-items:center;min-height:44px}
+summary::-webkit-details-marker{display:none}
+details[open] summary .ic{transform:rotate(180deg)}
+.br{display:flex;justify-content:space-between;padding:9px 16px;font-size:13.5px;border-top:1px solid var(--line)}
+.br span{color:var(--mute)}
+/* gallery */
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.gal img{flex:0 0 180px;height:240px;object-fit:cover;border-radius:14px;scroll-snap-align:start}
+/* end */
+.end{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:56px}
+.prof{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;display:flex;gap:18px;align-items:center;position:relative;overflow:hidden}
+.prof .av{width:92px;height:92px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px var(--butter);flex:none}
+.prof h3{font-size:20px;font-weight:800}
+.prof p{color:var(--mute);font-size:13.5px;margin:4px 0 12px}
+.ig{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF);color:#fff}
+.tt{background:#111;color:#fff}
+.dl{background:var(--ink);color:#fff;border-radius:22px;padding:26px;display:flex;gap:18px;align-items:center}
+.mock{width:84px;aspect-ratio:3/4;border-radius:8px;flex:none;background:url(img/jeep1.jpg) center 75%/cover;position:relative;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.4);transform:rotate(-4deg)}
+.mock b{position:absolute;top:8px;left:0;right:0;text-align:center;color:#fff;font-weight:900;font-size:18px;letter-spacing:-.04em;text-shadow:0 1px 4px rgba(0,0,0,.4)}
+.dl h3{font-size:18px;font-weight:800}
+.dl p{opacity:.75;font-size:13.5px;margin:4px 0 12px}
+footer{padding:36px 20px 44px;text-align:center;color:var(--mute);font-size:12.5px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(140px);background:var(--ink);color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;font-size:14px;transition:.3s;z-index:60}
+.toast.on{transform:translateX(-50%) translateY(0)}
+@media(max-width:900px){
+ .wrap{padding:0 14px}
+ .links{display:none}.top .btn span{display:none}.top .btn{padding:0 13px}
+ .hero{height:auto;min-height:0;aspect-ratio:3/4.3;border-radius:22px;margin-top:12px}
+ .hin{padding:20px 18px}
+ .hr{text-align:left}.hr .row,.prog{justify-content:flex-start}
+ .hr h1{font-size:28px}.hr .row .btn{min-height:42px}
+ .prog{display:none}
+ .facts{grid-template-columns:1fr 1fr}.fact:nth-child(3){border-left:0}.fact:nth-child(n+3){border-top:1px solid var(--line)}
+ .two,.stay,.bud,.end,.flam{grid-template-columns:1fr}
+ .sh{flex-direction:column;align-items:flex-start;gap:6px}
+ .stk{display:none}
+ section{padding-top:44px}
+ .st{flex-basis:72%}.bc{flex-basis:60%}
+ .mini{grid-template-columns:1fr 1fr 1fr}
+ .prof,.dl{padding:20px}
+ .stay .sc .ph{aspect-ratio:2/1}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="me" href="https://www.instagram.com/abnerguaranda"><img src="img/avatar.jpg" alt="">@abnerguaranda</a>
+  <nav class="links"><a href="#antes">Antes de viajar</a><a href="#itinerario">Itinerario</a><a href="#playas">Playas</a><a href="#comer">Comer y salir</a><a href="#presupuesto">Presupuesto</a></nav>
+  <div class="sp"></div>
+  <a class="btn b-ink sm" href="#descargar"><svg class="ic"><use href="#i-down"/></svg><span>Descargar guía</span></a>
+</div></header>
+
+<main class="wrap">
+<div class="hero" id="hero">
+  <div class="hin">
+    <div><div class="pre">Guía para viajar a</div><div class="word">ARUBA</div></div>
+    <div class="hb">
+      <a class="author" href="https://www.instagram.com/abnerguaranda"><img src="img/avatar.jpg" alt="Foto de Abner"><div><small>Guía creada por</small><b>@abnerguaranda</b></div></a>
+      <div class="hr">
+        <h1>5 días. 4 noches.</h1>
+        <div class="row"><a class="btn b-white" href="#itinerario">Ver itinerario</a><a class="btn b-ghost" href="#presupuesto">Presupuesto</a></div>
+        <div class="prog"><span id="hn">01</span><i><b id="hbar"></b></i><span>05</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="facts">
+  <div class="fact"><div class="ib"><svg class="ic"><use href="#i-plane"/></svg></div><div><small>Ruta</small><b>GYE → AUA</b></div></div>
+  <div class="fact"><div class="ib"><svg class="ic"><use href="#i-cal"/></svg></div><div><small>Duración</small><b>5 días · 4 noches</b></div></div>
+  <div class="fact"><div class="ib"><svg class="ic"><use href="#i-users"/></svg></div><div><small>Grupo</small><b>5 personas</b></div></div>
+  <div class="fact"><div class="ib"><svg class="ic"><use href="#i-wallet"/></svg></div><div><small>Por persona</small><b>~US$700</b></div></div>
+</div>
+
+<section id="antes">
+  <div class="sh"><div><div class="eb">Checklist</div><h2>Antes de viajar</h2></div><p>Tres trámites. Todos se hacen en línea.</p></div>
+  <div class="box">
+    <div class="rowi"><div class="ib"><svg class="ic"><use href="#i-doc"/></svg></div><div><h3>ED Card · US$20</h3><p>Entre 7 días y 4 horas antes del vuelo.</p></div><a class="lnk" href="https://edcardaruba.aw/welcome">Llenar ↗</a></div>
+    <div class="rowi"><div class="ib"><svg class="ic"><use href="#i-shield"/></svg></div><div><h3>Vacuna fiebre amarilla</h3><p>Certificado internacional. Primera dosis 10 días antes.</p></div><a class="lnk" href="https://sgrdacaa-admision.msp.gob.ec/hcue/paciente/certificadovacuna/public/index">Certificado ↗</a></div>
+    <div class="rowi"><div class="ib"><svg class="ic"><use href="#i-pass"/></svg></div><div><h3>Pasaporte y vuelo</h3><p>Avianca GYE–AUA–GYE · US$263,92 por persona.</p></div><a class="lnk" href="https://www.avianca.com/">Cotizar ↗</a></div>
+  </div>
+</section>
+
+<section id="hospedaje">
+  <div class="sh"><div><div class="eb">Hospedaje y transporte</div><h2>Dónde quedarte</h2></div><p>Busca 4 noches para 5 personas.</p></div>
+  <div class="stay">
+    <div class="sc"><div class="ph"><img src="img/swing.jpg" alt="Columpio frente al mar" loading="lazy" style="object-position:center 60%"></div><div class="bd"><h3>Palm Beach <span class="tg">Recomendado</span></h3><p>Cerca del catamarán, restaurantes y la vida nocturna.</p><div class="lk"><a class="lnk" href="https://www.airbnb.com/s/Palm-Beach--Noord--Aruba/homes?adults=5">Ver en Airbnb ↗</a></div></div></div>
+    <div class="sc"><div class="ph"><img src="img/oranje1.jpg" alt="Casas de colores en Oranjestad" loading="lazy" style="object-position:center 50%"></div><div class="bd"><h3>Oranjestad</h3><p>Cerca del centro y del aeropuerto. Más tranquilo.</p><div class="lk"><a class="lnk" href="https://www.airbnb.com/s/Oranjestad--Aruba/homes?adults=5">Ver en Airbnb ↗</a></div></div></div>
+    <div class="car">
+      <div style="display:flex;gap:12px;align-items:center"><div class="ib"><svg class="ic"><use href="#i-car"/></svg></div><div><b>Auto de alquiler</b><div style="font-size:13px;color:#C9CCD2">+297 564 2825</div></div></div>
+      <ul><li><svg class="ic"><use href="#i-check"/></svg>Espacio para 5 y maletas</li><li><svg class="ic"><use href="#i-check"/></svg>Seguro y depósito</li><li><svg class="ic"><use href="#i-check"/></svg>Punto de entrega y devolución</li></ul>
+      <a class="btn b-butter sm" href="https://wa.me/2975642825">Cotizar por WhatsApp ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="itinerario">
+  <div class="sh"><img class="stk" src="img/caballito.png" alt="" style="width:46px;right:0;top:-14px"><div><div class="eb">Itinerario</div><h2>Día por día</h2></div><p>Desliza cada día para ver las paradas. Cada una abre en Google Maps.</p></div>
+  <div id="days"></div>
+</section>
+
+<section id="playas">
+  <div class="sh"><img class="stk" src="img/concha.png" alt="" style="width:40px;right:0;top:-10px"><div><div class="eb">Ruta de playas</div><h2>Las playas</h2></div><p>Toca una playa para abrirla en Maps.</p></div>
+  <div class="brail" id="beaches"></div>
+</section>
+
+<section id="comer">
+  <div class="sh"><div><div class="eb">Comer y salir</div><h2>Restaurantes y noche</h2></div><p>La vida nocturna está casi toda en Palm Beach y empieza entre 8 y 9 p.m.</p></div>
+  <div class="two">
+    <div class="box list"><div class="lh"><svg class="ic"><use href="#i-fork"/></svg>Dónde comer</div><div id="food"></div></div>
+    <div class="box list"><div class="lh"><svg class="ic"><use href="#i-moon"/></svg>Para salir de noche</div><div id="night"></div></div>
+  </div>
+</section>
+
+<section id="flamencos">
+  <div class="flam">
+    <img class="stk" src="img/hibisco.png" alt="" style="width:60px;right:12px;top:10px">
+    <div class="l"><div class="eb">Plan extra · opcional</div><h2>Isla de los flamencos</h2>
+      <p>Renaissance Island, isla privada del Renaissance Wind Creek Aruba Resort. No entra en el itinerario ni en el presupuesto.</p>
+      <div class="pts"><span>Bote ida y vuelta</span><span>1 comida + 1 bebida</span><span>Cupos limitados</span><span>Gratis si te hospedas ahí</span></div>
+      <div class="lk"><a class="btn b-ink sm" href="https://www.google.com/search?q=Renaissance+Island+Aruba+day+pass">Comprar pase ↗</a><a class="lnk" href="https://www.google.com/maps/search/?api=1&query=Renaissance+Island+Aruba"><svg class="ic"><use href="#i-pin"/></svg>Maps</a></div></div>
+    <div class="r"><small>Pase de día por persona</small><div class="pr">US$125–150</div><small>Grupo de 5: <b style="color:var(--ink)">US$625–750</b> · confirma el precio al comprar</small></div>
+  </div>
+</section>
+
+<section id="presupuesto">
+  <div class="sh"><div><div class="eb">Presupuesto · grupo de 5</div><h2>¿Cuánto cuesta?</h2></div><p>Valores reales del viaje. Pueden cambiar al reservar.</p></div>
+  <div class="bud">
+    <div class="tot"><div><div style="font-size:13px;color:#C9CCD2">Total por persona</div><div class="big">US$700</div></div><div class="g"><span>Grupo de 5</span><b>US$3.500</b></div></div>
+    <div>
+      <div class="mini"><div><small>Vuelo</small><b>US$264</b></div><div><small>Hospedaje</small><b>US$108</b></div><div><small>Tours</small><b>US$145</b></div></div>
+      <details><summary>Ver desglose completo <svg class="ic"><use href="#i-chev"/></svg></summary><div id="rows"></div></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sh"><div><div class="eb">Momentos</div><h2>Así se vive Aruba</h2></div></div>
+  <div class="gal" id="gal"></div>
+</section>
+
+<div class="end" id="descargar">
+  <div class="prof">
+    <img class="stk" src="img/hibisco.png" alt="" style="width:44px;right:12px;top:10px">
+    <img class="av" src="img/avatar.jpg" alt="Foto de perfil de Abner">
+    <div><h3>@abnerguaranda</h3><p>Sígueme para más guías y recomendaciones de viaje.</p>
+      <div class="lk"><a class="btn ig sm" href="https://www.instagram.com/abnerguaranda"><svg class="ic"><use href="#i-ig"/></svg>Instagram</a><a class="btn tt sm" href="https://www.tiktok.com/@abnerguaranda"><svg class="ic"><use href="#i-tt"/></svg>TikTok</a></div></div>
+  </div>
+  <div class="dl"><div class="mock"><b>ARUBA</b></div><div><h3>Guía completa en PDF</h3><p>7 páginas: itinerario, playas, restaurantes, noche, presupuesto y todos los enlaces.</p><button class="btn b-butter sm" onclick="pdfFull(this)"><svg class="ic"><use href="#i-down"/></svg>Descargar PDF</button></div></div>
+</div>
+</main>
+<footer>Guía de @abnerguaranda · Precios de referencia; confírmalos al reservar.</footer>
+<div class="toast" id="toast"></div>
+
+<svg width="0" height="0" style="position:absolute">
+ <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></symbol>
+ <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+ <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+ <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+ <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+ <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="3"/><path d="M2 10h20M16 15h2"/></symbol>
+ <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+ <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+ <symbol id="i-pass" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M8 17h8"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+ <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+ <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></symbol>
+ <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/></symbol>
+ <symbol id="i-fork" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></symbol>
+ <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></symbol>
+ <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+ <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 17h14v-5l-2-5H7l-2 5z"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/></symbol>
+ <symbol id="i-ruin" viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></symbol>
+ <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+ <symbol id="i-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+ <symbol id="i-tt" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V2c.5 2.5 2.5 4.5 5 5"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+ <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+</svg>
+<script>
+const M=q=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(q);
+const ic=n=>`<svg class="ic"><use href="#i-${n}"/></svg>`;
+const DAYS=[
+ {t:"Llegada y Oranjestad",sub:"Día tranquilo",stops:[
+   {w:"Llegada",img:"oranjestad",h:"Aeropuerto AUA",p:"Recoge el auto o toma taxi.",maps:"Aeropuerto Internacional Reina Beatrix Aruba"},
+   {w:"Tarde",img:"mural",h:"Centro de Oranjestad",p:"Casas de colores y el mural Dutch Caribbean.",maps:"Oranjestad Aruba"},
+   {w:"Noche",icon:"fork",h:"Cena cerca del hospedaje",p:"Gianni's (Palm Beach) o Yemanja (centro).",maps:"Palm Beach Aruba restaurants"}]},
+ {t:"Arikok en Jeep y costa norte",sub:"Jeep 8 h · US$70 c/u",routeUrl:"https://www.google.com/maps/dir/?api=1&origin=Arikok%20National%20Park%20Visitor%20Center%20Aruba&destination=Natural%20Bridge%20Aruba&waypoints=Conchi%20Natural%20Pool%20Aruba&travelmode=driving",route:["Arikok","Conchi","Natural Bridge"],
+  tip:"Confirma que el Jeep cubra caminos sin pavimentar y el acceso a Conchi.",stops:[
+   {w:"Temprano",img:"jeep1",h:"Recoge el Jeep",p:"US$350 por 8 horas para el grupo.",maps:null,links:[["Reservar","https://www.getyourguide.com/norte-l1101/jeep-wrangler-8-horas-de-alquiler-t687862/"]]},
+   {w:"Mañana",img:"cueva",h:"Parque Arikok",p:"Cuevas Fontein o Guadirikiri. Entrada aparte.",maps:"Arikok National Park Visitor Center Aruba"},
+   {w:"Mañana",img:"conchi",h:"Conchi (Natural Pool)",p:"Solo si el mar lo permite.",maps:"Conchi Natural Pool Aruba"},
+   {w:"Mediodía",icon:"pin",h:"Natural Bridge",p:"Queda un puente natural pequeño.",maps:"Natural Bridge Aruba"}]},
+ {t:"Playas del sur y Savaneta",sub:"Playa + mariscos",routeUrl:"https://www.google.com/maps/dir/?api=1&origin=Baby%20Beach%20Aruba&destination=The%20Flying%20Fishbone%20Aruba&waypoints=Zeerovers%20Aruba%7CMangel%20Halto%20Aruba&travelmode=driving",route:["Baby Beach","Zeerovers","Mangel Halto","Flying Fishbone"],stops:[
+   {w:"Mañana",img:"babybeach",h:"Baby Beach",p:"Laguna turquesa y poco profunda.",maps:"Baby Beach San Nicolas Aruba"},
+   {w:"Almuerzo",icon:"fork",h:"Zeerovers",p:"Pescado frito en el muelle. Sin reserva.",maps:"Zeerovers Savaneta 270 Aruba"},
+   {w:"Tarde",img:"mangel",h:"Mangel Halto",p:"Manglares, rocas y snorkel tranquilo.",maps:"Mangel Halto Aruba"},
+   {w:"Cena",icon:"fork",h:"The Flying Fishbone",p:"Mesas en el agua. Reserva a las 16:00.",maps:"The Flying Fishbone Savaneta 344 Aruba",links:[["Reservar","https://www.flyingfishbone.com/index.php/reservations"]]}]},
+ {t:"Snorkel en el norte y catamarán",sub:"Catamarán · US$75 c/u",routeUrl:"https://www.google.com/maps/dir/?api=1&origin=Tres%20Trapi%20Aruba&destination=Octopus%20Aruba%20Palm%20Beach&waypoints=Boca%20Catalina%20Aruba%7CArashi%20Beach%20Aruba%7CCalifornia%20Lighthouse%20Aruba&travelmode=driving",route:["Tres Trapi","Boca Catalina","Arashi","Faro"],
+  tip:"Elige una o dos paradas de snorkel para llegar a tiempo al catamarán.",stops:[
+   {w:"Mañana",img:"trapi1",h:"Tres Trapi",p:"Escaleras directo al agua.",maps:"Tres Trapi Aruba"},
+   {w:"Mañana",img:"snorkel",h:"Snorkel con peces",p:"Cardúmenes junto a las rocas de Tres Trapi.",maps:"Tres Trapi Aruba",maps:"Tres Trapi Aruba"},
+   {w:"Mañana",img:"marco",h:"Boca Catalina",p:"Snorkel y el marco turquesa.",maps:"Boca Catalina Aruba"},
+   {w:"Mañana",img:"swing",h:"Arashi Beach",p:"Columpios y agua calmada.",maps:"Arashi Beach Aruba"},
+   {w:"Opcional",img:"faroself",h:"Faro California",p:"Vista desde la punta norte.",maps:"California Lighthouse Aruba"},
+   {w:"Tarde",img:"catamaran",h:"Catamarán + barra libre",p:"Snorkel incluido. Lleva toalla.",maps:"Octopus Aruba J.E. Irausquin Boulevard 87 Palm Beach Noord Aruba",links:[["Reservar","https://www.getyourguide.com/norte-l1101/noord-tarde-de-navegacion-con-snorkel-y-barra-libre-t321623/"]]}]},
+ {t:"Regreso a Ecuador",sub:"Check-out y vuelo",stops:[
+   {w:"Salida",icon:"plane",h:"Aeropuerto AUA",p:"Entrega el auto y llega con tiempo.",maps:"Aeropuerto Internacional Reina Beatrix Aruba"}]}];
+const BEACH=[
+ {n:"Eagle Beach",tag:"Arena blanca",d:"Los árboles fofoti.",img:"fofoti",q:"Eagle Beach Aruba"},
+ {n:"Boca Catalina",tag:"Snorkel",d:"Agua cristalina.",img:"marco",q:"Boca Catalina Aruba"},
+ {n:"Arashi",tag:"Tranquila",d:"Columpios y sombra.",img:"swing",q:"Arashi Beach Aruba"},
+ {n:"Baby Beach",tag:"Laguna",d:"Agua poco profunda.",img:"babyaerea",q:"Baby Beach Aruba"},
+ {n:"Mangel Halto",tag:"Escondida",d:"Rocas y manglares.",img:"mangel"},
+ {n:"Tres Trapi",tag:"Snorkel",d:"Escaleras al mar.",img:"trapi2",q:"Tres Trapi Aruba",q:"Mangel Halto Aruba"},
+ {n:"Palm Beach",tag:"Con ambiente",d:"Bares y atardecer.",img:"cocteles",q:"Palm Beach Aruba"}];
+const FOOD=[
+ {v:1,n:"The Flying Fishbone",tag:"Mariscos",d:"Mesas en el agua · Savaneta",q:"The Flying Fishbone Savaneta 344 Aruba",r:"https://www.flyingfishbone.com/index.php/reservations"},
+ {v:1,n:"Zeerovers",tag:"Pescado frito",d:"En el muelle · sin reserva",q:"Zeerovers Savaneta 270 Aruba"},
+ {v:0,n:"Gianni's",tag:"Italiano",d:"Palm Beach",q:"Gianni's Ristorante Italiano Noord Aruba",r:"https://www.sevenrooms.com/reservations/giannisaruba/website-reservations?venues=azzurroristorante%2Cgiannisaruba"},
+ {v:0,n:"Azzurro",tag:"Italiano frente al mar",d:"Playa Linda, Palm Beach",q:"Azzurro Ristorante Italiano Playa Linda Aruba",r:"https://www.sevenrooms.com/reservations/azzurroristorante/website-reservations?venues=azzurroristorante%2Cgiannisaruba"},
+ {v:0,n:"Yemanja",tag:"Parrilla a leña",d:"Centro de Oranjestad",q:"Yemanja Woodfired Grill Oranjestad Aruba",r:"https://www.yemanja-aruba.com/reservation-form/"}];
+const NIGHT=[
+ {n:"Kalibra",tag:"Disco latina",d:"Salsa, bachata y reggaetón · Palm Beach 55",q:"Kalibra Bar Aruba",i:"https://www.kalibra-aruba.com"},
+ {n:"Gusto Nightclub",tag:"Discoteca",d:"Para bailar hasta tarde · Palm Beach",q:"Gusto Nightclub Aruba"},
+ {n:"MooMba Beach Bar",tag:"Bar de playa",d:"Tragos y música en la arena",q:"MooMba Beach Bar Aruba"},
+ {n:"Bugaloe",tag:"Salsa",d:"Clases gratis los miércoles",q:"Bugaloe Beach Bar Aruba"},
+ {n:"Casinos",tag:"Casinos",d:"Abiertos hasta tarde en Palm Beach",q:"casino Palm Beach Aruba"}];
+const BUD=[["Vuelo Avianca ida y vuelta",263.92,"Importe del viaje"],["Hospedaje, 4 noches",108,"Total ÷ 5"],["Comidas",80,"Estimación"],["Catamarán",75,"Importe del viaje"],["Jeep Wrangler",70,"US$350 ÷ 5"],["Auto regular, 5 días",32,"Referencia del viaje"],["Margen (combustible, traslados)",29.08,"Estimación"],["Entrada a Arikok",22,"Confirmar tarifa"],["ED Card",20,"Tasa oficial"]];
+const GAL=["snorkel","babyaerea","trapi2","marco","mural","cueva","catamaran","babybeach","faroself","grupo","fofoti","conchi","noche","pulseras"];
+const HERO=[["jeep1","96%"],["marco","75%"],["babybeach","60%"],["oranje1","55%"],["catamaran","45%"]];
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],fmt=n=>"US$"+n.toLocaleString("es-EC",{minimumFractionDigits:n%1?2:0,maximumFractionDigits:2});
+const src=k=>`img/${k}.jpg`;
+const maps=q=>`<a class="lnk" href="${M(q)}">${ic("pin")}Maps</a>`;
+
+$("#hero").insertAdjacentHTML("afterbegin",HERO.map(([k,y],i)=>`<div class="slide${i?"":" on"}"><img src="${src(k)}" alt="" style="object-position:center ${y}" ${i?'loading="lazy"':''}></div>`).join(""));
+let hi=0;const setH=()=>{$("#hn").textContent="0"+(hi+1);$("#hbar").style.width=((hi+1)/5*100)+"%"};setH();
+if(!matchMedia("(prefers-reduced-motion: reduce)").matches)setInterval(()=>{const s=$$(".slide");s[hi].classList.remove("on");hi=(hi+1)%s.length;s[hi].classList.add("on");setH()},5000);
+
+$("#days").innerHTML=DAYS.map((d,i)=>`<article class="day" id="dia-${i+1}">
+ <div class="dh"><div class="dn"><div class="n">${i+1}</div><div><small>Día ${i+1} · ${d.sub}</small><h3>${d.t}</h3></div></div>${d.routeUrl?`<a class="lnk" href="${d.routeUrl}">${ic("route")}Ruta del día ↗</a>`:""}</div>
+ <div class="rail">${d.stops.map(s=>`<div class="st"><div class="ph">${s.img?`<img src="${src(s.img)}" alt="${s.h}" loading="lazy">`:ic(s.icon||"pin")}</div><div class="bd"><span class="w">${s.w}</span><h4>${s.h}</h4><p>${s.p}</p><div class="lk">${s.maps?maps(s.maps):""}${(s.links||[]).map(([t,u])=>`<a class="lnk" href="${u}">${t} ↗</a>`).join("")}</div></div></div>`).join("")}</div>
+ ${d.tip?`<div class="note">${ic("info")}<span>${d.tip}</span></div>`:""}</article>`).join("");
+$("#beaches").innerHTML=BEACH.map(b=>`<a class="bc" href="${M(b.q)}"><div class="ph"><img src="${src(b.img)}" alt="${b.n}" loading="lazy"></div><h4>${b.n}${ic("pin")}</h4><p>${b.tag} · ${b.d}</p></a>`).join("");
+const li=f=>`<div class="li"><div><h4>${f.n}<span class="tg${f.v===0?" k":""}">${f.v?"Fuimos":f.tag}</span></h4><p>${f.v?f.tag+" · ":""}${f.d}</p></div><div class="acts"><a class="ibtn" href="${M(f.q)}" aria-label="Ver ${f.n} en Maps">${ic("pin")}</a>${f.r||f.i?`<a class="ibtn" href="${f.r||f.i}" aria-label="${f.r?"Reservar":"Info"} ${f.n}">${ic(f.r?"cal":"ext")}</a>`:""}</div></div>`;
+$("#food").innerHTML=FOOD.map(li).join("");
+$("#night").innerHTML=NIGHT.map(f=>li({...f,v:undefined})).join("");
+$("#rows").innerHTML=BUD.map(b=>`<div class="br"><span>${b[0]}</span><b>${fmt(b[1])}</b></div>`).join("")+`<div class="br"><b>Total por persona</b><b>US$700</b></div>`;
+$("#gal").innerHTML=GAL.map(k=>`<img src="${src(k)}" alt="Viaje a Aruba" loading="lazy">`).join("");
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),2600)}
+
+/* PDF prediseñado */
+async function pdfFull(btn){const old=btn.innerHTML;btn.disabled=true;btn.textContent="Preparando PDF…";
+ try{const blob=await (await fetch("guia-aruba.pdf")).blob();let done=false;
+  try{const dl=window.claude&&await window.claude.use("downloads");if(dl){await dl.save({filename:"Guia-Aruba-abnerguaranda.pdf",data:blob});done=true;toast("Guía descargada")}}catch(e){done=true}
+  if(!done){const u=URL.createObjectURL(blob);const x=document.createElement("a");x.href=u;x.download="Guia-Aruba-abnerguaranda.pdf";document.body.appendChild(x);x.click();x.remove();toast("Guía descargada")}
+ }catch(e){toast("No se pudo descargar el PDF")}
+ btn.disabled=false;btn.innerHTML=old}
+</script>
+</body>
+</html>
