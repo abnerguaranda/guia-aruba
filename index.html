@@ -337,7 +337,7 @@ const DAYS=[
    {w:"Noche",icon:"fork",h:"Cena cerca del hospedaje",p:"Fuimos a Gianni's (italiano, Palm Beach).",maps:"Palm Beach Aruba restaurants"}]},
  {t:"Arikok en Jeep y costa norte",sub:"Jeep 8 h · US$70 c/u",routeUrl:"https://www.google.com/maps/dir/?api=1&origin=Arikok%20National%20Park%20Visitor%20Center%20Aruba&destination=Natural%20Bridge%20Aruba&waypoints=Conchi%20Natural%20Pool%20Aruba&travelmode=driving",route:["Arikok","Conchi","Natural Bridge"],
   tip:"Confirma que el Jeep cubra caminos sin pavimentar y el acceso a Conchi.",stops:[
-   {w:"Temprano",img:"jeep1",h:"Recoge el Jeep",p:"US$350 por 8 horas para el grupo.",maps:null,links:[["Reservar","https://www.getyourguide.com/norte-l1101/jeep-wrangler-8-horas-de-alquiler-t687862/"]]},
+   {w:"Temprano",img:"jeep1",h:"Recoge el Jeep",p:"US$350 por 8 horas para el grupo.",maps:null,links:[["Reservar","https://www.getyourguide.com/norte-l1101/jeep-wrangler-8-horas-de-alquiler-t687862/?utm_source=getyourguide&utm_medium=sharing&utm_campaign=activity_details"]]},
    {w:"Mañana",img:"cueva",h:"Parque Arikok",p:"Cuevas Fontein o Guadirikiri. Entrada aparte.",maps:"Arikok National Park Visitor Center Aruba"},
    {w:"Mañana",img:"conchi",h:"Conchi (Natural Pool)",p:"Solo si el mar lo permite.",maps:"Conchi Natural Pool Aruba"},
    {w:"Mediodía",icon:"pin",h:"Natural Bridge",p:"Queda un puente natural pequeño.",maps:"Natural Bridge Aruba"}]},
@@ -397,6 +397,7 @@ $("#food").innerHTML=FOOD.map(li).join("");
 $("#night").innerHTML=NIGHT.map(f=>li({...f,v:undefined})).join("");
 $("#rows").innerHTML=BUD.map(b=>`<div class="br"><span>${b[0]}</span><b>${fmt(b[1])}</b></div>`).join("")+`<div class="br"><b>Total por persona</b><b>US$700</b></div>`;
 $("#gal").innerHTML=GAL.map(k=>`<img src="${src(k)}" alt="Viaje a Aruba" loading="lazy">`).join("");
+document.querySelectorAll('a[href^="http"]').forEach(a=>{a.target="_blank";a.rel="noopener"});
 function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),2600)}
 
 /* PDF prediseñado */
